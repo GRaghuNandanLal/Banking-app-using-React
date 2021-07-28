@@ -1,0 +1,110 @@
+User Story-1: As an Employee he can add new Customer/Account.
+Add new Customer/Account flow:
+1. Customer applies for the bank account
+2. Bank employee fills in details on the basis of application form in the system.
+3. Business related validations take place as a part of process in the system.
+4. New Customer account gets created for the registered Customer automatically.
+5. System generates random one time use password which is sent to user by post on the registered
+address for first login
+
+
+User Story-2:As a Customer
+I want to Login to my account using card and PIN code
+So that I can perform the transactions.
+Acceptance Criteria –
+• System must validate the card and pin code
+• In case Customer enters wrong Pin code three times then the system locks the card.
+
+
+User Story-3: As a Customer he can view his account summary.
+View account summary flow:
+1. On successful login Customer can view his account summary on home page
+2. Every time customer clicks on home tab account summary will be shown to customer.
+
+
+User Story-4:As a Customer
+I want to check the wheather which account I hold.
+1.Customer has to login to account.
+2.Customer needs to select the perfred account i.e.,Saving,Business,
+Fixed etc....
+User Story-5:As a Customer
+I want to to check the balance of my bank account
+So that I can perform transactions.
+Acceptance Criteria –
+• Customer needs to be logged in before checking balance.
+• Balances is displayed.
+
+
+User Story-6:As a Customer
+I want to to deposit cash in my bank account through ATM
+So that I may save my time and perform transactions later.
+Acceptance Criteria –
+• Customer needs to be logged in before depositing cash.
+• System should verify the amount of cash deposited by checking with the user.
+• If the user doesn’t agree then the system ejects back the cash.
+• If Ok the account balance is updated and displayed.
+
+
+User Story-7: As an Employee he can change User Status to Active, 
+Inactive and Locked
+Change User Status flow:
+1. User reports some suspicious activity in the account and calls customer 
+care. Person on support from bank (Bank Employee) searches for user account
+and locks it for all user activities.
+2. User Forgets password and does change password process and calls customer
+care for further assistance. Bank employee does telephonic verification before 
+changing user account status to Inactive. System generates random password for
+one time use which will be sent to user by post.
+
+
+User Story-8: As an Employee he can deposit and deduct amount from Customer Account
+for a cash related transaction at the bank.
+1. Customer visits bank for cash deposit/withdrawal.
+2. Customer fills up deposit/withdraw slip and goes to teller.
+3. Teller (Employee) logs into the system and searches for Customer based on 
+the details provided.
+4. Teller selects appropriate action (deposit/withdraw) and updates the system 
+after collecting/giving the cash
+5. Amount gets added/ deducted from Customer account after successful operation.
+User Story-9: As a User (Customer, Employee), he can change his password.
+1. User needs to maintain account security by changing password frequently.
+2. User selects change password from the tab list.
+3. After authentication based on current password, new password is updated
+in the system
+4. User is redirected to login screen for relogin.
+
+
+User Story-10: As a User (Customer, Employee), he can update profile details.
+1. Customer/Employee logs in the website.
+2. Customer updates only profile details which are editable like occupation email 
+and mobile.
+3. Employee updates only profile details which are editable like Qualification 
+email and mobile
+4. Customer/Employee address details can only be updated by authorised bank 
+employee.
+
+
+User Story-11: As a User (Customer, Employee), he can request new password 
+on forgot password.
+Forgot password flow:
+1. User clicks on forgot password link available on login page.
+2. User has to put id and registered mobile, email correctly for authentication.
+3. System locks user account for any activity.
+4. User calls customer care for further assistance as instructed on change password 
+screen.
+5. Bank employee changes user status to Inactive and system will generate random 
+password for one time use.
+6. The one time password will be sent to user by post. 
+
+
+User Story-12: As a User (Customer, Employee), he can login.
+1. User fills in user Id, Password on login page.
+2. If User status in the system is inactive then user is forced to change 
+password on login using one time use password.
+3. On successful authentication Customer will see customer home page and employee will see
+employee home page both having different entitlements.
+
+
+User Story-13: As a User (Customer, Employee), he can logout from the system.
+1. When user is done using system user clicks on logout button.
+2. System clears user session and redirects user to login page.
