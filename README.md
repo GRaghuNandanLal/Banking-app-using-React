@@ -1,10 +1,10 @@
 # Banking-app-using-React
 
-Install Node Modules 
-Check   npm --version
-        npm install --save
-        npm audit fix
-        npm start
+Install Node Modules <br> 
+Check   npm --version <br>
+        npm install --save <br>
+        npm audit fix <br>
+        npm start <br>
 
 # Home Page (landing Page)
 ![](1.png)
