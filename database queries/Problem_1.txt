@@ -1,0 +1,9 @@
+Problem#1:
+
+Write a query to display the customer number, firstname, customer’s date of birth. Display in sorted order of date of birth year and within that sort by firstname.
+
+Solution:  
+
+SELECT custid, fname, mname,dob 
+FROM customer 
+ORDER BY EXTRACT(year FROM dob), fname ASC;

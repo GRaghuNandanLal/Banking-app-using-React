@@ -1,0 +1,10 @@
+Problem # 7:
+
+Write a query to display city name and count of branches in that city. Give the count of branches an alias name of Count_Branch.
+
+Solution:
+
+SELECT bcity, count(*)
+AS Count_Branch 
+FROM branch
+Group By bcity;

@@ -1,0 +1,10 @@
+Problem#3:
+
+Write a query to display account number, customer’s number, customer’s firstname,lastname,account opening date.
+
+Solution:
+
+SELECT account.acnumber, customer.custid, customer.fname, customer.ltname, account.aod
+FROM account
+INNER JOIN customer 
+ON account.custid = customer.custid;

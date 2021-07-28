@@ -1,0 +1,10 @@
+Problem # 10:
+
+Write a query to display customer number, customer name, account number where the account status is terminated.
+
+Solution:
+
+SELECT customer.custid, customer.fname, account.acnumber
+FROM account, customer
+WHERE account.custid = customer.custid
+AND astatus = “Terminated”;

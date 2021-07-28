@@ -1,0 +1,10 @@
+Problem # 9:
+
+Write a query to display the customer’s number, customer’s firstname, branch id and loan amount for people who have taken loans.
+
+Solution:
+
+SELECT customer.custid, customer.fname, branch.bid, loan.loan_amount
+FROM ((loan
+INNER JOIN customer ON loan.custid=customer.custid)
+INNER JOIN branch ON loan.bid=branch.bid);

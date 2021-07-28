@@ -1,0 +1,10 @@
+Problem # 8:
+
+Write a query to display account id, customer’s firstname, customer’s lastname for the customer’s whose account is Active.
+
+Solution:
+
+SELECT account.acnumber, customer.fname, customer.ltname
+FROM account, customer
+WHERE account.custid = customer.custid
+AND astatus = “Active”;

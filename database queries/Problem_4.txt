@@ -1,0 +1,11 @@
+Problem # 4:
+
+Write a query to display the number of customer’s from Delhi. Give the count an alias name of Cust_Count.
+
+Solution:
+
+SELECT 
+		(SELECT COUNT(city)
+		FROM customer
+		WHERE city=’Delhi’)
+AS Cust_Count;

@@ -1,0 +1,10 @@
+Problem # 6:
+
+Write a query to display the female customers firstname, city and account number who are not into business, service or studies.
+
+Solution:
+
+SELECT DISTINCT customer.fname, customer.city, account.acnumber
+FROM account, customer
+WHERE account.custid = customer.custid
+AND NOT(occupation=”business” or occupation=”service” or occupation=”student”);

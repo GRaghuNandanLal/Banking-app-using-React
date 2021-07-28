@@ -1,0 +1,10 @@
+Problem # 5:
+
+Write a query to display  the customer number, customer firstname,account number for the customer’s whose accounts were created after 15th of any month.
+
+Solution:
+
+SELECT account.custid, customer.fname, account.acnumber
+FROM account, customer
+WHERE account.custid = customer.custid
+AND day(aod) > 15;
